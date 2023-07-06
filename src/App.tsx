@@ -16,7 +16,7 @@ function App() {
     // const timer =  setInterval(() => counter > 0 && setCounter(counter - 1), 1000);
     // return () => clearInterval(timer);
 
-    // with setTimeOut
+    // with setTimeOut no need to handle for interval clear at unmount
     setTimeout(() => {
       counter > 0 && setCounter(counter - 1);
     }, 1000);
